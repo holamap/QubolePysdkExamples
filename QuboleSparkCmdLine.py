@@ -23,10 +23,10 @@ def get_content(filename):
     return content
 
 # Executing given query
-def execute_cmd(cmd):
-    if cmd is None or cmd == "":
+def execute_cmd(command):
+    if command is None or command == "":
         return None
-    cmd = SparkCommand.create(cmdline=cmd)
+    cmd = SparkCommand.create(cmdline=command)
     query_id = str(cmd.id)
     print "Starting Command with id: " + query_id + "\nProgress: =>",
     while not SparkCommand.is_done(cmd.status):
