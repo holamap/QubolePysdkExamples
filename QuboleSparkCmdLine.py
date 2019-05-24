@@ -1,5 +1,5 @@
 """
-This is the sample code used for submitting a Presto query (SparkCommand) and getting the result back to local file.
+This is the sample code used for submitting a SparkCommand and getting the result back to local file.
 Similar way can be followed for HiveCommand etc.
 """
 
